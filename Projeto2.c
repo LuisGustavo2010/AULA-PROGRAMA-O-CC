@@ -1,24 +1,24 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h> //Biblioteca necess√°ria para opera√ß√µes matematicas
 
 int main()
 {
-    //DeclaraÁ„o das variaveis
+    //Declara√ß√£o das variaveis
     int resto;
     int a, b, soma, produto;
     int potencia;
 
-    //Impress„o, input e scan dos dados
+    //Impress√£o, input e scan dos dados
     printf("Digite o Valor 1: ");
     scanf("%i",&a);
     printf("Digite o valor 2: ");
     scanf("%i",&b);
 
-    //operaÁıes
+    //opera√ß√µes
     soma=a+b;
     produto= a*b;
     potencia=pow(a,b);
-    resto=a%b; //% = o resto de uma divis„o
+    resto=a%b; //% = o resto de uma divis√£o
 
     //Exibindo resultados //pular linha = barra invertida + n
     printf("O valor da soma entre A e B eh: %i ",soma);
