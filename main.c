@@ -7,22 +7,23 @@
     //  3) Receba 2 notas. Calcule a média ponderada (peso3 e peso7)
 
 int main()
-
 {
-   float nota1,nota2; //float para poder inserir valores decimais
-   float mediap;
+   int n1,n2,n3;
+   int produto;
 
-   printf("Insira a nota da P1 de 0 a 10: ");
-   scanf("%f",&nota1);
-   printf("Insira a nota da P2 de 0 a 10: ");
-   scanf("%f",&nota2);
+   printf("Digite o Primeiro valor: ");
+   scanf("%i",&n1);
+   printf("\n");
+   printf("Digite o Segundo valor: ");
+   scanf("%i",&n2);
+   printf("\n");
+   printf("Digite o Terceiro valor: ");
+   scanf("%i",&n3);
+   printf("\n");
 
-    //média ponderada tem duas formas de se realizar
-    //1º:  (nota1*3 + nota2*7)/10 divide por 10.
-    //2º:  (nota1*0.3 nota2*0.7)quando for um numero decimal, é necessário declarar a variavel como tipo FLOAT
+   produto = n1*n2*n3;
 
-   mediap= (nota1*0.3 + nota2*0.7);
-   printf("A sua media eh: %0.1f",mediap);//%0.1 = declara quantas casas após a virgula serão apresentadas
+   printf("O valor do produto dos numero eh: %i",produto);
 
    return 0;
 
